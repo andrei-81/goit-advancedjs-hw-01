@@ -1,18 +1,42 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 1128px;
+    margin: 24px auto;
+}
+
+/* body {
+    min-width: 1440px;
+} */
+
+.gallery-item,
+.gallery-image {
+    height: 200px;
+    width: 360px;
+    object-fit: cover;
+    cursor: url('bxs_hand-down.png'), auto;
+}
+
+.modal-image {
+    display: block;
+    height: 640px;
+    width: 1112px;
+    object-fit: cover;
+}
+
+.modal {
+    display: flex;
+    flex-direction: row;
+    /* min-width: 1440px;
+    min-height: 696px; */
+    justify-content: center;
+}
+
